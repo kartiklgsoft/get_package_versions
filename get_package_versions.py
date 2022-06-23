@@ -14,7 +14,7 @@ def main():
     
     arg_parser = argparse.ArgumentParser()
     arg_parser.add_argument("-ga", required=True, help="Specify the group ID and artifact ID in the following format - 'groupID:artifactID'. Eg. - 'org.cometd.java:cometd-java-oort'")
-    arg_parser.add_argument("-vr", required=True, nargs="+", help="Specify the vulnerable version range(s) in the following format - '[[lwr,upr],[lwr,upr]].")
+    arg_parser.add_argument("-vr", required=True, nargs="+", help="Specify the vulnerable version range(s) in the following format: -vr 4.12 5.17")
     arg_parser.add_argument("-c", action="store_true", help="Specify the -c flag if you want the version list suitable for adding to json file")
     args = arg_parser.parse_args()
     
